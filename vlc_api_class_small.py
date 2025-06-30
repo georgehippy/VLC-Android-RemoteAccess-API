@@ -6,11 +6,15 @@ import subprocess
 import json
 
 """
+STATUS: this code works.
+
 A small, pared-down version of the VLCRemoteAccessAPI class for small-script usage. 
 Using this class requires you to know the API endpoints and parameter formats.
 You can delete the staticmethods if you want.
 Note: at defaults, this code requires the Termux:API 'termux-notification-list' command to be available and permissioned, unless you call myclass.authenticate() with manual=True. 
 If you don't plan on using 'termux-nofitication-list', you can delete get_code_from_android_notifs() and modify authenticate() to only do a manual input.
+
+TODO: should probably just have get() and post() methods to send GET and POST requests.
 """
 
 class VLCRemoteAccessAPI:
