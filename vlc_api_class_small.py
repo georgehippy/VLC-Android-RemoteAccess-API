@@ -13,8 +13,6 @@ Using this class requires you to know the API endpoints and parameter formats.
 You can delete the staticmethods if you want.
 Note: at defaults, this code requires the Termux:API 'termux-notification-list' command to be available and permissioned, unless you call myclass.authenticate() with manual=True. 
 If you don't plan on using 'termux-nofitication-list', you can delete get_code_from_android_notifs() and modify authenticate() to only do a manual input.
-
-TODO: should probably just have get() and post() methods to send GET and POST requests.
 """
 
 class VLCRemoteAccessAPI:
@@ -62,6 +60,12 @@ class VLCRemoteAccessAPI:
         else:
             response = self.session.post(url=url, verify=False)
         return response
+
+    def get(self, endpoint="/video-list", **param_obj):
+        return self.api_call("get", endpoint, **param_obj)
+
+    def post(self, endpoint, **param_obj):
+        return self.api_call("post", endpoint, **param_obj)
 
     def sha256(self, data_string):
         # data should be a string, convert to bytes and hash it.
