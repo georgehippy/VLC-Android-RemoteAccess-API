@@ -1,6 +1,11 @@
 # VLC-Android-RemoteAccess-API
 Python code to use the VLC Android Remote Access web server as an API
 
+## Status
+- the small class file and recipe file have the absolute basics in terms of functionality, and is working. 
+- the larger class file is not done. Not useful at the moment. 
+- the API recipe file is missing some API calls that we should have examples of.
+
 ## Summary
 - This is basic and not-full-featured python code for connecting to and using the VLC Android Remote Access web server as a headless API.
 - This code should cover basic needs for getting and setting common items.
