@@ -6,6 +6,7 @@ import subprocess
 import json
 
 """
+STATUS: not done. just a copy of the small class.
 TODO: fill in this code with API calls. 
 
 Note: at defaults, this code requires the Termux:API 'termux-notification-list' command to be available and permissioned, 
@@ -27,7 +28,13 @@ class VLCRemoteAccessAPI:
     def endpoint(self, endpoint):
         return f"{self.url}{endpoint}"
 
+    def bool_to_str(self, var_bool):
+        """ convert a boolean-esque value to the javascript-style 'true' or 'false'. """
+        return str(bool(var_bool)).lower()
+
     def build_param_str(self, obj):
+        #we don't urlencode things because all data for the basic functions should be very standard types.
+        #TODO but for the non-basic function, there should be a urlencode function somewhere here
         form_params = "?"
         for key in obj: form_params += f"{key}={obj[key]}&"
         return form_params[:-1]  #pop off the last ampersand char.
