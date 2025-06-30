@@ -1,10 +1,10 @@
 # VLC-Android-RemoteAccess-API
-Python code to use the VLC Android Remote Access web server as an API
+Python code to use the VLC Android Remote Access web server as an API.
 
-## Status
-- the small class file and recipe file have the absolute basics in terms of functionality, and is working. 
+## Status: half-done
+- the small class file and recipe file have the absolute basics in terms of functionality, and are working. 
 - the larger class file is not done. Not useful at the moment. 
-- the API recipe file is missing some API calls that we should have examples of.
+- the API recipe file is missing some API calls that we should have examples of. Mostly done.
 
 ## Summary
 - This is basic and not-full-featured python code for connecting to and using the VLC Android Remote Access web server as a headless API.
@@ -66,6 +66,7 @@ This code was tested on June 2025:
 
 ## Relevant VLC-Android Source Code on Gitlab
 To see all API endpoints that are possible, you'll have to read the source code in these files:
+
 The main API endpoints:
 - [https://code.videolan.org/videolan/vlc- ... type=heads](https://code.videolan.org/videolan/vlc-android/-/blob/master/application/remote-access-server/src/main/java/org/videolan/vlc/remoteaccessserver/RemoteAccessRouting.kt?ref_type=heads)
 
