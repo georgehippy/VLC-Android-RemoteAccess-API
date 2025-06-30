@@ -59,7 +59,7 @@ This code was tested on June 2025:
 - a Kindle Fire 8 (12th gen) running Fire OS 8.3.3.5
 - VLC 3.6.5 (2025-5-11) | Termux version 0.118.3 | Termux:API version 0.52.0
 
-## Relevant Source Code
+## Relevant VLC-Android Source Code on Gitlab
 To see all API endpoints that are possible, you'll have to read the source code in these files:
 The main API endpoints:
 - [https://code.videolan.org/videolan/vlc- ... type=heads](https://code.videolan.org/videolan/vlc-android/-/blob/master/application/remote-access-server/src/main/java/org/videolan/vlc/remoteaccessserver/RemoteAccessRouting.kt?ref_type=heads)
